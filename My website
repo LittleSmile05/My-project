@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 1000px;
+        }
+        header{          
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 100px;
+            z-index: 1000;
+            transition: 0.6s;
+        }
+        h2{
+            font-size: 55px;
+        }
+        header .logo{
+            background-color: rgb(72, 119, 130);
+            position: relative;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.6s;
+        }
+        header ul{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+        }
+        header ul li{
+            position: relative;
+            list-style: none;
+        }
+        header ul li a{
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(180, 208, 225);
+            letter-spacing: 2px;
+            font-weight: 300;
+            transition: 0.6s;
+        }
+        .banner{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: url(image.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        }
+        .sec{
+            background: #fff;
+            padding: 100px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec .content{
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+        .mxm{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 40px;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+        p{
+            position: relative;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .btn{
+            position: relative;
+            display: inline-block;
+            padding: 10px 30px;
+            background: #000;
+            text-decoration: none;
+            color: white;
+        }
+        .iconBx img{
+            position: relative;
+            top: 7px;
+            width: 300px;
+            height: 300px;
+        }
+        .iconPx img{
+            position: relative;
+            top: 7px;
+            width: 300px;
+            height: 300px; 
+        }
+        .iconNx img{
+            position: relative;
+            bottom: 8px;
+            width: 300px;
+            height: 300px;  
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo" >LOGO</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <h2>We make brands matter</h2>
+    </section>
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxm">
+                <h3>Who we are?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type 
+                      specimen book. It has survived not only five centuries, but also the leap into
+                       electronic typesetting, remaining essentially unchanged. It was popularised in 
+                       the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including 
+                        versions of Lorem Ipsum</p>
+                        <a href="#" class="btn">Read Our Story</a>
+            </div>
+        </div>
+    </section>
+    <section class="sec about" id="service">
+        <div class="content">
+            <div class="mxm">
+                <h3>What we do</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type 
+                      specimen book. It has survived not only five centuries, but also the leap into
+                       electronic typesetting, remaining essentially unchanged.</p>
+                        <a href="#" class="btn">Read Our Story</a>
+            </div>
+            <div class="services">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="http://cdn.onlinewebfonts.com/svg/img_467703.png">
+                    </div>
+                    <div class="content">
+                        <h2>Design</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book.</p>
+                    </div>
+                </div>
+                <div class="pvx">
+                    <div class="iconPx">
+                        <img src="https://avatars.mds.yandex.net/i?id=4eefdf89266d4356d6351ac7351ca43d-3713366-images-thumbs&n=13">
+                    </div>
+                    <div class="contentx">
+                        <h2>Development</h2>
+                        <p>
+                            It has survived not only five centuries, but also the leap into
+                       electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+                <div class="gvx">
+                    <div class="iconNx">
+                        <img src="https://a-cloud.b-cdn.net/media/original/5a1802391d13a943fbef69864f686428.svg">
+                    </div>
+                    <div class="contenty">
+                        <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type 
+                      specimen book. It has survived not only five centuries, but also the leap into
+                       electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>               
+            </div>          
+        </div>
+    </section>
+</body>
+</html>
